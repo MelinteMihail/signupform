@@ -16,12 +16,19 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+label, input {
+    display: block;
 }
 
 .main-container {
     height: 100%;
+    display: flex;
 }
 
+/* LEFT CONTAINER STYLTING */
 
 .left-container {
     background-image: url(bg.jpg);
@@ -37,9 +44,6 @@ body {
 
 }
 
-.right-container {
-    width: 70%;
-}
 
 .title,
 .background-div {
@@ -85,4 +89,49 @@ body {
 
 .title > img {
     height: 70%;
+}
+
+/* RIGHT CONTAINER STYLING */
+
+.right-container {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.first-container {
+    background-color: #f9fafb;
+    height: 35%;
+    padding-left: 5rem;
+    padding-top: 10rem;
+}
+
+.first-container h2 {
+    width: 60ch;
+}
+
+.text-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.second-container {
+    padding-left: 5rem;
+    margin-top: 2rem;
+}
+
+.second-container h2 {
+    margin-bottom: 1rem;
+}
+
+
+
+.names,
+.information,
+.passw {
+    display: flex;
+    gap: 10rem;
+    margin-bottom: 2rem;
 }
