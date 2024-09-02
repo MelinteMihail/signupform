@@ -45,39 +45,47 @@
                     <div class="names">
                         <div class="fname">
                             <label for="fname">FIRST NAME</label>
-                            <input type="text" name="first_name" id="fname">
+                            <input type="text" name="first_name" id="fname" required>
                         </div>
 
                         <div class="lname">
                             <label for="lname">LAST NAME</label>
-                            <input type="text" name="last_name" id="lname">
+                            <input type="text" name="last_name" id="lname" required>
                         </div>
                     </div>
 
                     <div class="information">
                         <div class="email">
                             <label for="mail">EMAIL</label>
-                            <input type="email" name="email" id="mail">
+                            <input type="email" name="email" id="mail" required>
                         </div>
 
                         <div class="number">
                             <label for="number">PHONE NUMBER</label>
-                            <input type="tel" name="phone_number" id="number">
+                            <input type="tel" name="phone_number" id="number"required>
                         </div>
                     </div>
 
                     <div class="passw">
                         <div class="password">
                             <label for="pass">PASSWORD</label>
-                            <input type="password" name="password" id="pass">
+                            <input type="password" name="password" id="pass" required minlength="8">
                         </div>
 
                         <div class="confirm-password">
                             <label for="cpass">CONFIRM PASSWORD</label>
-                            <input type="password" id="cpass">
+                            <input type="password" id="cpass" required>
                         </div>
                     </div>
+
+                    <div class="button">
+                        <button>Create Account</button>
+                    </div>
                 </form>
+            </div>
+
+            <div class="log-in">
+                <p>Already have an account? <a href="#">Log in</a></p>
             </div>
         </div>
     </div>

@@ -1,3 +1,10 @@
+:root {
+    --width: 18.5rem;
+    --height: 2.1rem;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 @font-face {
     font-family: 'norsebold';
     src: 
@@ -93,6 +100,30 @@ label, input {
 
 /* RIGHT CONTAINER STYLING */
 
+label {
+    font-size: 88%;
+    color: #666;
+    font-weight: bold;
+}
+
+input {
+    font-size: 1.1rem;
+    border-radius: 0.3rem;
+    padding: 0.2rem 0 0.2rem 0.5rem;
+    border: 1px solid #E5E7EB;
+    width: var(--width);
+    height: var(--height);
+}
+
+input[type="password"]:user-invalid {
+    outline: 1px solid #ff0000;
+}
+
+input:focus {
+    outline: 1px solid #2352d8;
+    box-shadow: 1px 2px 10px -5px black;
+}
+
 .right-container {
     width: 70%;
     display: flex;
@@ -102,7 +133,7 @@ label, input {
 
 .first-container {
     background-color: #f9fafb;
-    height: 35%;
+    height:100%;
     padding-left: 5rem;
     padding-top: 10rem;
 }
@@ -118,15 +149,21 @@ label, input {
 }
 
 .second-container {
+    background-color: #fff;
     padding-left: 5rem;
     margin-top: 2rem;
+    position: absolute;
+    top: 350px;
+    width: 100%;
+    box-shadow: 0px 5px 5px 0px rgba(211,211,211,1), 0px -5px 5px 0px rgba(211,211,211,1);
 }
 
 .second-container h2 {
     margin-bottom: 1rem;
+    font-family: "Poppins", system-ui;
+    font-weight: 500;
+    font-style: normal;
 }
-
-
 
 .names,
 .information,
@@ -134,4 +171,40 @@ label, input {
     display: flex;
     gap: 10rem;
     margin-bottom: 2rem;
+}
+
+.button button {
+    background-color: #596d48;
+    color: #fff;
+    padding: 0.9rem 3.5rem;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 10px;
+    position: absolute;
+    margin-top: 50px;
+}
+
+.button button:hover {
+    cursor: pointer;
+    background-color: #5c714b;
+    color: #e6e6e6;
+}
+
+.log-in {
+    position: absolute;
+    bottom: 160px;
+    padding-left: 5rem;
+}
+
+.log-in p,
+.log-in a {
+    font-size: 1.1rem;
+    font-family: "Poppins", system-ui;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.log-in a {
+    color: #596d48;
+    text-decoration: none;
 }
