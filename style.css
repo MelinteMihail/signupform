@@ -167,7 +167,7 @@ input:focus {
 
 .names,
 .information,
-.passw {
+.passwords {
     display: flex;
     gap: 10rem;
     margin-bottom: 2rem;
@@ -207,4 +207,9 @@ input:focus {
 .log-in a {
     color: #596d48;
     text-decoration: none;
+}
+
+.password-check {
+    color: #ff0000;
+    font-size: 0.95rem;
 }
