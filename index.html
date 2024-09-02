@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="main-container">
         <div class="left-container">
             <div class="background-div"></div>
             <div class="title">
-                <img src="odin-lined.png" alt="">
+                <img src="photos/odin-lined.png" alt="">
                 <h1>ODIN</h1>
             </div>
 
@@ -62,25 +63,25 @@
 
                         <div class="number">
                             <label for="number">PHONE NUMBER</label>
-                            <input type="tel" name="phone_number" id="number"required placeholder="9990009990">
+                            <input type="tel" name="phone_number" id="number" required placeholder="1234567890" minlength="10" maxlength="10">
                         </div>
                     </div>
 
                     <div class="passwords">
                         <div class="password">
                             <label for="pass">PASSWORD</label>
-                            <input type="password" name="password" id="pass" required minlength="8">
-                            <p class="password-check">* Passwords do not match</p>
+                            <input type="password" name="password" id="pass" required minlength="8" placeholder="Minimum length is 8">
+                            <p class="password-check hidden">* Passwords do not match</p>
                         </div>
 
                         <div class="confirm-password">
                             <label for="cpass">CONFIRM PASSWORD</label>
-                            <input type="password" id="cpass" required>
+                            <input type="password" id="cpass" required minlength="8" placeholder="Minimum length is 8">
                         </div>
                     </div>
 
                     <div class="button">
-                        <button>Create Account</button>
+                        <button class="form-button">Create Account</button>
                     </div>
                 </form>
             </div>
